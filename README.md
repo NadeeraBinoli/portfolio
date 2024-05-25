@@ -12,4 +12,4 @@ Here is my first portfolio
   
 ### Links
 
-- Live Site URL: (https://nadeerabinoli.github.io/portfolio/))
+- Live Site URL: https://nadeerabinoli.github.io/portfolio/
