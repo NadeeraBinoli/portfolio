@@ -66,9 +66,9 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #dcd7d6;
   text-align: left;
-  background-color: #F1EB90;
+  background-color: #181c19;
 }
 
 [tabindex="-1"]:focus {
@@ -161,7 +161,7 @@ sup {
 }
 
 a {
-  color: #114232;
+  color: #bc8641;
   text-decoration: none;
   background-color: transparent;
 }
@@ -2771,15 +2771,16 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: #114232;
-  background-color: #87A922;
-  border-color: #87A922;
+  color: #dcd7d6;
+  background-color: #bc8641;
+  border-color: #bc8641;
+
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #114232;
-  border-color: #114232;
+  background-color: #1795f2;
+  border-color: #1795f2;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -3043,15 +3044,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-  color: #114232;
-  border-color: #114232;
+  color: #bc8641;
+  border-color: #bc8641;
   border-width: 2px;
 }
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #87A922;
-  border-color: #87A922;
+  background-color: #1795f2;
+  border-color: #1795f2;
 }
 
 .btn-outline-primary:focus, .btn-outline-primary.focus {
@@ -11073,10 +11074,16 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0 8px 0 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
   font-weight: 500;
   /* font-family: 'Baloo Paaji', cursive; */
-  color: #114232;
+  color: #1795f2;
+}
+
+h3{
+  font-weight: 500;
+  /* font-family: 'Baloo Paaji', cursive; */
+  color: #bc8641;
 }
 
 .my-font {
@@ -11086,7 +11093,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-size: 18px;
   opacity: 1;
-  color: #111;
+  color: #dcd7d6;
   letter-spacing: .6px;
 }
 
@@ -11180,8 +11187,8 @@ p {
 
   background-image: linear-gradient(
     to right,
-    #EC8F5E 75%,
-    #EC8F5E 75%
+    #1795f2 75%,
+    #1795f2 75%
   );
   background-position: 0 3rem;
   background-repeat: repeat-x;
@@ -11191,7 +11198,7 @@ p {
 }
 
 .portfolios-links .underline:hover{
-  color:#EC8F5E;
+  color:#1795f2;
 }
 
 .portfolio-card-overlay{
@@ -11454,7 +11461,7 @@ pre .code {
           align-items: center;
   -webkit-transition: all, 0.3s;
   transition: all, 0.3s;
-  background-color: #f3b664;
+  background-color: #181c19;
   /* font-family: 'Baloo Paaji', cursive; */
 }
 
@@ -11535,7 +11542,7 @@ pre .code {
 }
 
 .custom-navbar.affix {
-  background: #F3B664;
+  background: #181c19;
   border-bottom: 1px solid rgba(222, 226, 230, 0.34);
 }
 
@@ -11544,7 +11551,7 @@ pre .code {
 }
 
 .custom-navbar.affix .nav .item .link {
-  color: #6c757d;
+  color: #dcd7d6;
 }
 
 .custom-navbar.affix .hamburger-inner, .custom-navbar.affix .hamburger-inner::before, .custom-navbar.affix .hamburger-inner::after {
@@ -11885,7 +11892,7 @@ pre .code {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #f1eb90;
+  background-color: #181c19;
 }
 
 
@@ -11904,7 +11911,7 @@ pre .code {
 .header .header-content .header-title .up {
   font-size: calc(20px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
   font-weight: 500;
-  color: #444;
+  color: #bc8641;
   margin-bottom: 5px;
   position: relative;
   display: block;
@@ -11937,7 +11944,7 @@ pre .code {
   font-size: 2.4rem;
   font-weight: bold;
   opacity: .8;
-  color: #212529;
+  color: #1795f2;
 }
 
 .header-mini {
