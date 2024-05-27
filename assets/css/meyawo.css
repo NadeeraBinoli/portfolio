@@ -167,7 +167,7 @@ a {
 }
 
 a:hover {
-  color: #493f75;
+  color: #1795f2;
   text-decoration: none;
 }
 
@@ -10965,114 +10965,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-::-moz-selection {
-  background: #695aa6;
-  color: white;
-}
-
-::selection {
-  background: #695aa6;
-  color: white;
-}
-
-.infos {
-  height: 100px;
-  padding-bottom: 20px;
-  color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  opacity: .8;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.infos * {
-  margin: 0;
-  padding: 0;
-}
-
-.infos .title,
-.infos .socials {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-.infos .title .subtitle,
-.infos .socials .subtitle {
-  font-size: 14px;
-  opacity: .9;
-}
-
-.infos .title .font-small {
-  color: #fff;
-  font-size: 13px;
-}
-
-.infos .subtitle {
-  margin: 2px;
-}
-
-.infos .subtitle i {
-  width: 20px;
-  display: inline-block;
-  position: relative;
-  top: 2px;
-}
-
-.infos .social-links a {
-  font-size: 14px;
-  color: #fff;
-}
-
-.infos .social-links a:hover {
-  color: #695aa6;
-}
-
 /* contact section */
-.list {
-  list-style-type: none;
-  padding-left: 0;
-  padding: 0 30px;
-}
-
-.list .list-head {
-  border-bottom: 1px solid #dee2e6;
-  padding-bottom: 6px;
-}
-
-.list .list-body {
-  padding-top: 6px;
-}
-
-.list .list-body p {
-  margin-bottom: 5px;
-}
-
-.list .list-body p i {
-  display: inline-block;
-  width: 20px;
-}
-
-.list .list-body a {
-  display: block;
-  text-decoration: none;
-  margin-bottom: 4px;
-}
-
-.list .list-body .social-links {
-  margin-top: 15px;
-}
-
-.list .list-body .social-links a {
-  display: inline;
-  padding: 0 8px 0 0;
-}
 
 h1, h2, h4, h5, h6 {
   font-weight: 500;
@@ -11804,78 +11697,6 @@ pre .code {
   font-size: 14px;
 }
 
-.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  min-height: 70px;
-  border-top: 1px solid #dee2e6;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer p,
-.footer .social-links {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-flex-basis: 0;
-      -ms-flex-preferred-size: 0;
-          flex-basis: 0;
-}
-
-.footer a, .footer p {
-  color: #393e46;
-  padding: 4px 0;
-  display: inline-block;
-  margin: 0;
-}
-
-.footer .brand {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 6px;
-}
-
-.footer .social-links {
-  margin-left: auto;
-}
-
-.footer .social-links a {
-  padding: 0;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  line-height: 40px;
-  text-align: center;
-  border: 2px solid #6c757d;
-  color: #6c757d;
-}
-
-.footer .social-links a:hover {
-  background: #695aa6;
-  border-color: #695aa6;
-  color: #fff;
-  text-decoration: none;
-}
-
-@media (max-width: 767.98px) {
-  .footer {
-    padding: 15px 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .footer .social-links {
-    margin-top: 15px;
-  }
-}
 
 .header {
   position: relative;
@@ -11909,7 +11730,7 @@ pre .code {
   border-radius: 15rem;
 }
 .header .header-content .header-title .up {
-  font-size: calc(20px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
+  font-size: calc(10px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
   font-weight: 500;
   color: #bc8641;
   margin-bottom: 5px;
@@ -11918,7 +11739,7 @@ pre .code {
 }
 
 .header .header-content .header-title .down {
-  font-size: calc(20px + (75 - 30) * ((100vw - 300px) / (1300 - 300)));
+  font-size: calc(14px + (75 - 30) * ((100vw - 300px) / (1300 - 300)));
   margin-bottom: 0;
   position: relative;
   display: block;
@@ -11941,7 +11762,6 @@ pre .code {
 }
 
 .header-title {
-  font-size: 2.4rem;
   font-weight: bold;
   opacity: .8;
   color: #1795f2;
@@ -11970,6 +11790,35 @@ pre .code {
   text-align: center;
   padding: 1rem;
   background: #a59cca;
+}
+
+.header-content .socialIcons{
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem
+}
+
+.header-content .socialIcons a {
+  background-color: #dcd7d6;
+  padding: .4rem .7rem;
+  color: #181c19;
+  border-radius:51rem;
+}
+
+.header-content .socialIcons a:hover{
+  background-color:  #1795f2;
+  animation-name: slideIn;
+  animation-duration: 2s;
+}
+
+@keyframes slideIn{
+from {
+    transform: scale(1.2)
+  }
+
+  to {
+    transform: scale(1)
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -12028,6 +11877,96 @@ pre .code {
     margin-bottom: 20px;
   }
 }
+
+/* skills section */
+
+.skill-heading {
+  text-align: center;
+}
+
+.skill-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: fit-content;
+  flex-wrap: wrap;
+}
+
+.skill-list h5 {
+  font-size: 14px;
+  margin: 0.5rem;
+  background: #dcd7d6;
+  color: #181c19;
+  letter-spacing: 0.1rem;
+  padding: 5px 15px;
+  border-radius: 25px;
+}
+
+.skill-heading h4{
+  color: #bc8641;
+}
+
+/* qualifications section */
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #bc8641;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #bc8641;
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #0563bb;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #dcd7d6;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #181c19;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #bc8641;
+  border: 2px solid #bc8641;
+}
+
 
 /* sections */
 .section {
