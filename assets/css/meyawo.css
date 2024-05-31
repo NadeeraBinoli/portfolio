@@ -11621,7 +11621,7 @@ pre .code {
     position: absolute;
     top: calc(100% + 1px);
     left: 0;
-    background: #F3B664;
+    background: #181c19;
     border-radius: 0 0 0 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -11700,7 +11700,7 @@ pre .code {
 
 .header {
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
   min-height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11724,13 +11724,12 @@ pre .code {
       -ms-flex-positive: 1;
           flex-grow: 1;
   max-width: 650px;
+  justify-content: center;
+  text-align: center;
 }
-.headerImg img{
-  margin-right: 8rem;
-  border-radius: 15rem;
-}
+
 .header .header-content .header-title .up {
-  font-size: calc(10px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
+  font-size:2rem;
   font-weight: 500;
   color: #bc8641;
   margin-bottom: 5px;
@@ -11739,7 +11738,7 @@ pre .code {
 }
 
 .header .header-content .header-title .down {
-  font-size: calc(14px + (75 - 30) * ((100vw - 300px) / (1300 - 300)));
+  font-size: 4rem;
   margin-bottom: 0;
   position: relative;
   display: block;
@@ -11747,7 +11746,7 @@ pre .code {
 }
 
 .header .header-content .header-subtitle {
-  font-size: calc(10px + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
+  font-size: 1.5rem;
   letter-spacing: calc(1px + (7 - 1) * ((100vw - 300px) / (1300 - 300)));
   opacity: .8;
   margin-top: -10px;
@@ -11795,7 +11794,9 @@ pre .code {
 .header-content .socialIcons{
   margin-top: 2rem;
   display: flex;
-  gap: 1rem
+  gap: 1rem;
+  text-align: center;
+  justify-content: center;
 }
 
 .header-content .socialIcons a {
@@ -11993,4 +11994,43 @@ from {
 
 .section-lg {
   padding: 100px 0 !important;
+}
+
+/* contactInfo SECTION */
+
+.contactInfo{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.contactInfo .contact .cInfo{
+  text-align: left;
+}
+
+@media (max-width: 770px) {
+  .contactInfo{
+    display: flex;
+    gap: 0rem;
+    flex-direction: column;
+  }
+
+  .contactInfo .contact .cInfo{
+    text-align: center;
+  }
+}
+
+/* footer */
+
+footer{
+  border-top: 1px solid rgba(222, 226, 230, 0.34);
+}
+
+footer p{
+  font-size: 12px;
+  text-align: center;
+}
+
+footer p i{
+  color:#c7384f ;
 }
