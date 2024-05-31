@@ -11124,6 +11124,10 @@ p {
   border-radius: 0;
 }
 
+.featured{
+  text-align: center;
+}
+
 /* blog wrapper */
 .blog-card {
   display: -webkit-box;
