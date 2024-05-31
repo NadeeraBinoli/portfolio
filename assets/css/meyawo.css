@@ -11124,10 +11124,6 @@ p {
   border-radius: 0;
 }
 
-.featured{
-  text-align: center;
-}
-
 /* blog wrapper */
 .blog-card {
   display: -webkit-box;
@@ -11825,9 +11821,7 @@ from {
   .header {
     background-size: cover;
   }
-  .header-content {
-    padding-left: calc(100% / 5) !important;
-  }
+
 }
 
 .about {
