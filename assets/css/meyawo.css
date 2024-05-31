@@ -11087,7 +11087,7 @@ p {
   background-repeat: repeat-x;
   background-size: 8px 2px;
   padding: 1rem 0;
-  font-weight: 600;
+  font-weight: 900;
 }
 
 .portfolios-links .underline:hover{
@@ -11106,8 +11106,8 @@ p {
   justify-content: center;
   visibility: hidden;
   opacity: 0;
-  background-image: -webkit-linear-gradient(bottom, #e1dfed 0%, rgba(225, 223, 237, 0.7) 99%, rgba(225, 223, 237, 0.8) 100%);
-  background-image: linear-gradient(to top, #e1dfed 0%, rgba(225, 223, 237, 0.7) 99%, rgba(225, 223, 237, 0.8) 100%);
+  background-image: -webkit-linear-gradient(bottom, #323232 0%, rgba(76, 76, 76, 0.9) 99%, rgba(76, 76, 76, 0.9) 100%);
+  background-image: linear-gradient(to top, #323232 0%, rgba(76, 76, 76, 0.9) 99%, rgba(76, 76, 76, 0.9) 100%);
   -webkit-transition: all, 0.3s;
   transition: all, 0.3s;
   width: 0;
@@ -11369,6 +11369,7 @@ pre .code {
   font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1300 - 300)));
   text-decoration: none;
   color: #fff;
+  opacity: .8;
 }
 
 .custom-navbar .container {
@@ -11700,7 +11701,7 @@ pre .code {
 
 .header {
   position: relative;
-  /* height: 100vh; */
+  height: 100vh;
   min-height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11732,14 +11733,14 @@ pre .code {
   font-size:2rem;
   font-weight: 500;
   color: #bc8641;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   position: relative;
   display: block;
 }
 
 .header .header-content .header-title .down {
   font-size: 4rem;
-  margin-bottom: 0;
+  margin-bottom: 30px;
   position: relative;
   display: block;
   font-family: "Poetsen One", sans-serif;;
@@ -11749,16 +11750,10 @@ pre .code {
   font-size: 1.5rem;
   letter-spacing: calc(1px + (7 - 1) * ((100vw - 300px) / (1300 - 300)));
   opacity: .8;
-  margin-top: -10px;
+  /* margin-top: 10px; */
   margin-bottom: 20px;
 }
 
-.header .header-content .btn {
-  position: relative;
-  margin-top: 20px;
-  border-radius: 20px;
-  padding: 8px 15px;
-}
 
 .header-title {
   font-weight: bold;
@@ -11792,7 +11787,7 @@ pre .code {
 }
 
 .header-content .socialIcons{
-  margin-top: 2rem;
+  margin-top: 5rem;
   display: flex;
   gap: 1rem;
   text-align: center;
