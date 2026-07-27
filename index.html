@@ -1,492 +1,724 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Meyawo landing page.">
-    <meta name="author" content="Devcrud">
-    <title>Nadeera Binoli | Full-Stack developer</title>
-    <!-- Bootstrap + Meyawo main styles -->
-    <link rel="stylesheet" href="assets/css/meyawo.css">
-    <!-- font awesome link -->
+    <meta name="description"
+        content="Nadeera Binoli - Full-Stack Developer & Software Engineering Undergraduate Portfolio">
+    <meta name="author" content="Nadeera Binoli">
+    <title>Nadeera Binoli | Full-Stack Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Clean Minimalist CSS System -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+<body>
 
-    <!-- Page Navbar -->
-    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress"></div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="toast-notification">
+        <i class="fa-solid fa-circle-check text-accent"></i>
+        <span id="toast-msg">Notification message</span>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="navbar" id="navbar">
         <div class="container">
-            <a class="logo" href="#">NadB</a>
-            <ul class="nav">
-                <li class="item">
-                    <a class="link" href="#home">Home</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#about">About</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#skills">Skills</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#qualify">Qualifications</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#featured">Portfolio</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#blog">Blog</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#contact">Contact</a>
-                </li>
-            </ul>
-            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
-                <div class="hamburger-box">
-                    <div class="hamburger-inner"></div>
-                </div>
+            <a class="logo" href="#home">
+                Nad<span>B</span>
             </a>
-        </div>
-    </nav><!-- End of Page Navbar -->
-
-    <!-- page header -->
-    <header id="home" class="header">
-        <div class="header-content container">
-            <h1 class="header-title">
-                <span class="up">Ayubowan!</span>
-                <span class="down">I'm Nadeera Binoli</span>
-            </h1>
-            <p class="header-subtitle">FULL-STACK DEVELOPER</p>
-
-            <div class="socialIcons">
-                <a href="https://github.com/NadeeraBinoli"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.instagram.com/nadeera_binoli?igsh=dHJ2YWdpdHNqZmxl"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/nadeera-binoli-44747a253/"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://web.facebook.com/nadeera.binoli"><i class="fa-brands fa-facebook"></i></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a class="nav-link active" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#skills">Skills</a></li>
+                <li><a class="nav-link" href="#qualify">Qualifications</a></li>
+                <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li><a class="nav-link" href="#blog">Blog</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
         </div>
-    </header><!-- end of page header -->
+    </nav>
 
-        <!-- featured section -->
-        <section class="section" id="featured">
-            <!-- container -->
-            <div class="container text-center">
-                <!-- featured wrapper -->
-                <div class="featured">
-                    <p class="section-subtitle">What are my best works ?</p>
-                    <h2 class="section-title mb-3">Featured Projects</h2>
-                    <p>Want to see some more projects?  <a href="#portfolio">See more <i class="fa-solid fa-angles-right"></i></a> </p>
-                    <div class="row">
-                        <div class="portfolios-item col-md-4">
-                            <img class="portfolios-image" src="assets/imgs/project8.png" alt="screenshot of design portfolio website"/>
-                            <h3 class="portfolios-name">Nutri-Assist – Meal Planning & Health Tracking System</h3>
-                            <p class="portfolios-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JS</span>
-                            <span>Python</span>
-                            <span>MySQL</span>
-                            <span>Git</span>
-                            <span>Figma</span>
-                            </p>
-                            <div class="portfolio-card-overlay">
-                                <div class="portfolios-links">
-                                    <a href="https://github.com/NadeeraBinoli/Nutri-Assist" class="underline" target="_blank" rel="noopener noreferrer">View Code</a>
-                                    <a href="https://www.figma.com/design/yOyA2r1qj92893SyEaXhN5/Nutri-Assist-Prototype?node-id=2-5272&t=76z9tjbtivZQrzem-1" class="underline" target="_blank" rel="noopener noreferrer">View Design</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolios-item col-md-4">
-                            <img class="portfolios-image" src="assets/imgs/project7.png" alt="screenshot of design portfolio website"/>
-                            <h3 class="portfolios-name">Fresh Chef – Food and Beverages Delivering and Catering System</h3>
-                            <p class="portfolios-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JS</span>
-                            <span>PHP</span>
-                            <span>MySQL</span>
-                            <span>Git</span>
-                            </p>
-                            <div class="portfolio-card-overlay">
-                                <div class="portfolios-links">
-                                    <a href="https://github.com/NadeeraBinoli/Fresh-Chef" class="underline"target="_blank" rel="noopener noreferrer">View Code</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolios-item col-md-4">
-                            <img class="portfolios-image" src="assets/imgs/project6.jpeg" alt="screenshot of design portfolio website"/>
-                            <h3 class="portfolios-name">e-commerce website</h3>
-                            <p class="portfolios-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JS</span>
-                            </p>
-                            <div class="portfolio-card-overlay">
-                                <div class="portfolios-links">
-                                    <a href="https://nadeerabinoli.github.io/ShopWithUs/" class="underline">Live project</a>
-                                    <a href="https://github.com/NadeeraBinoli/ShopWithUs" class="underline">View Code</a>
-                                </div>
-                            </div>
-                        </div>
+    <!-- Hero Section -->
+    <header class="hero section" id="home">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="status-badge">
+                        <span class="status-dot"></span> Full-Stack Developer Intern @ TechSeed Lanka
                     </div>
-                </div><!-- end of featured wrapper -->
-            </div><!-- end of container -->
-        </section> <!-- end of featured section -->
+                    <h1>Ayubowan!</h1>
+                    <h1>I'm <span class="text-accent">Nadeera Binoli</span></h1>
+                    <p class="subtitle">FULL-STACK DEVELOPER</p>
 
-    <!-- about section -->
+                    <div class="hero-actions">
+                        <a href="#portfolio" class="btn btn-primary">
+                            <i class="fa-solid fa-briefcase"></i> Explore Work
+                        </a>
+                        <a href="assets/cv/Nadeera Binoli.pdf" download="Nadeera Binoli CV.pdf" target="_blank"
+                            class="btn btn-outline">
+                            <i class="fa-solid fa-download"></i> Download CV
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fa-solid fa-paper-plane"></i> Get In Touch
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <span>Connect:</span>
+                        <a href="https://github.com/NadeeraBinoli" target="_blank" rel="noopener noreferrer"
+                            class="social-icon-btn" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nadeera-binoli-44747a253/" target="_blank"
+                            rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/nadeera_binoli?igsh=dHJ2YWdpdHNqZmxl" target="_blank"
+                            rel="noopener noreferrer" class="social-icon-btn" title="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://web.facebook.com/nadeera.binoli" target="_blank" rel="noopener noreferrer"
+                            class="social-icon-btn" title="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <div class="hero-avatar-card">
+                        <img src="assets/imgs/man.jpg" alt="Nadeera Binoli Portfolio Avatar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
     <section class="section" id="about">
-        <!-- container -->
-        <div class="container text-center">
-            <!-- about wrapper -->
-            <div class="about">
-                <div class="about-img-holder">
-                    <img src="assets/imgs/man.jpg" class="about-img"
-                        alt="">
-                </div>
-                <div class="about-caption">
-                    <p class="section-subtitle">Who Am I ?</p>
-                    <h2 class="section-title mb-3">About Me</h2>
-                    <p>
-                        Hello! I’m Nadeera Binoli. I’m a 4th-year Bachelor of Information Technology (Honours) undergraduate, specializing in Software Engineering, and currently working as a Full-Stack Developer Intern @ TechSeed Lanka. <br><br>
+        <div class="container">
+            <div class="text-center">
+                <span class="section-subtitle">Who Am I ?</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
 
-My journey into tech began with curiosity and quickly grew into a drive to create systems that solve real-world problems—especially those that impact people’s daily lives. <br><br>
-
-I enjoy taking ideas from concept to implementation, working across both front-end and back-end to deliver reliable and scalable applications. I consider myself a strong problem solver, a fast learner, and someone who enjoys tackling challenges through logical thinking and continuous improvement.<br><br>
-
-My ultimate goal is to become a well-rounded software engineer who not only writes code but creates impact.<br><br>
-
-Let’s connect if you're into tech, startups, or just enjoy building cool things from scratch! </p>
-                    <button class="btn btn-outline-primary  mt-4">Download CV</button>
-                </div>
-            </div><!-- end of about wrapper -->
-        </div><!-- end of container -->
-    </section> <!-- end of about section -->
-
-        <!-- skills section -->
-        <section class="section skills" id="skills">
-            <!-- container -->
-            <div class="container text-center">
-                <!-- skills wrapper -->
-                <div class="skills">
-                    <p class="section-subtitle">What I can ?</p>
-                    <h2 class="section-title mb-3">Skills</h2>
-                    <div class="row skills-content">
-                        <div class="col-lg-4" >
-                        <div class="skill-heading">
-                            <h4>General</h4>  
-                            </div>
-                            <div class="skill-list">
-                            <h5>UX/UI</h5>
-                            <h5>Communication Skills</h5>
-                            <h5>Project Management</h5>
-                            <h5>Frontend Dev</h5>
-                            <h5>Wireframing</h5>
-                            <h5>Problem Solving</h5>             
-                            </div>
+            <div class="about-grid">
+                <div class="about-stats-container">
+                    <div class="about-stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">3.56</div>
+                            <div class="stat-label">BIT (Hons) GPA</div>
                         </div>
-
-                        <div class="col-lg-4"  >
-                            <div class="skill-heading">
-                            <h4>Development</h4>  
-                            </div>
-                            <div class="skill-list">
-                            <h5>HTML</h5>
-                            <h5>CSS</h5>
-                            <h5>JavaScript</h5>
-                            <h5>Laravel</h5>
-                            <h5>Vue.js</h5>
-                            <h5>Java</h5>
-                            <h5>C</h5>
-                            <h5>C#</h5>
-                            <h5>MySQL</h5>
-                            <h5>Bootstrap</h5>
-                            <h5>PHP</h5>
-                            <h5>Node.js</h5> 
-                            <h5>Python</h5>             
-                            </div>
+                        <div class="stat-card">
+                            <div class="stat-number">Final</div>
+                            <div class="stat-label">Year Undergraduate</div>
                         </div>
-                        
-                        <div class="col-lg-4">
-                            <div class="skill-heading">
-                            <h4>Tools</h4>  
-                            </div>
-                            <div class="skill-list">
-                            <h5>VS Code</h5>
-                            <h5>Github</h5>
-                            <h5>Visual Studio</h5>
-                            <h5>Figma</h5>
-
-                            </div>   
+                        <div class="stat-card">
+                            <div class="stat-number">12+</div>
+                            <div class="stat-label">Software Projects</div>
                         </div>
-                        
-                        </div>
-                </div><!-- end of skills wrapper -->
-            </div><!-- end of container -->
-        </section> <!-- end of skills section -->
-
-    <!-- qualifications section -->
-        <section class="section resume" id="qualify">
-            <!-- container -->
-            <div class="container text-center">
-                <p class="section-subtitle">How suitable I am?</p>
-                <h2 class="section-title mb-3">Qualifications</h2>
-
-                <div class="row">
-                <div class="col-lg-6">
-                    <h3 class="resume-title">Education</h3>
-                    <div class="resume-item">
-                        <h4>Bachelor of Information Technology Honours</h4>
-                        <h5>2022 - Present</h5>
-                        <p><em>ESOFT Metro Campus, Colombo, Sri Lanka</em></p>
-                        <p>Course which is held in four years, I'm currently on my final year (3.55 GPA) and expected to graduate in 2026. Expecting to start my specialization based on software engineering from next year.</p>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <h3 class="resume-title">Professional Experience</h3>
-                    <div class="resume-item">
-                        <h4>Full-Stack Developer Intern</h4>
-                        <h5>2025 September - Present</h5>
-                        <p><em>TechSeed Lanka pvt (ltd) </em></p>
+
+                <div class="about-content">
+                    <div class="about-bio">
                         <p>
-                           Currently working as a Full-Stack Developer Intern, contributing to the development and enhancement of enterprise-level web applications using Laravel, Vue.js, and MySQL. My responsibilities include implementing backend business logic, developing RESTful APIs, handling complex data operations, and building responsive front-end interfaces. I also assist with system optimization, bug fixing, and feature improvements while following coding standards and best practices. 
+                            Hello! I’m Nadeera Binoli. I’m a 4th-year Bachelor of Information Technology (Honours)
+                            undergraduate, specializing in Software Engineering, and currently working as a Full-Stack
+                            Developer Intern @ TechSeed Lanka.
+                        </p>
+                        <p>
+                            My journey into tech began with curiosity and quickly grew into a drive to create systems
+                            that solve real-world problems—especially those that impact people’s daily lives.
+                        </p>
+                        <p>
+                            I enjoy taking ideas from concept to implementation, working across both front-end and
+                            back-end to deliver reliable and scalable applications. I consider myself a strong problem
+                            solver, a fast learner, and someone who enjoys tackling challenges through logical thinking
+                            and continuous improvement.
+                        </p>
+                        <p>
+                            My ultimate goal is to become a well-rounded software engineer who not only writes code but
+                            creates impact. Let’s connect if you're into tech, startups, or just enjoy building cool
+                            things from scratch!
                         </p>
                     </div>
+
+                    <a href="assets/cv/Nadeera Binoli.pdf" download="Nadeera Binoli CV.pdf" target="_blank"
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-file-pdf"></i> Download Official CV
+                    </a>
                 </div>
-                </div>
+            </div>
         </div>
     </section>
-    
-    <!-- portfolio section  -->
 
-    <section class="section portfolios" id="portfolio">
-        <div class="container text-center">
-            <p class="section-subtitle">What I Did ?</p>
-            <h6 class="section-title mb-6">Portfolio</h6>
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-subtitle">What I can ?</span>
+                <h2 class="section-title">Skills & Tech Stack</h2>
+            </div>
 
-            <div class="row">
-                <div class="portfolios-item col-md-4">
-                    <img class="portfolios-image" src="assets/imgs/project1.jpg"/>
-                    <h3 class="portfolios-name">Advice generator app</h3>
-                    <p class="portfolios-tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JS</span>
-                    </p>
-                    <div class="portfolio-card-overlay">
-                        <div class="portfolios-links">
-                            <a href="https://nadeerabinoli.github.io/Advice-generator/" class="underline" target="_blank" rel="noopener noreferrer">Live project</a>
-                            <a href="https://github.com/NadeeraBinoli/Advice-generator" class="underline" target="_blank" rel="noopener noreferrer">View Code</a>
+            <div class="skills-grid">
+                <!-- General Skills -->
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <i class="fa-solid fa-compass"></i>
                         </div>
+                        <h3>General</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-solid fa-palette"></i> UX/UI</span>
+                        <span class="skill-tag"><i class="fa-solid fa-comments"></i> Communication</span>
+                        <span class="skill-tag"><i class="fa-solid fa-diagram-project"></i> Project Mgmt</span>
+                        <span class="skill-tag"><i class="fa-solid fa-code"></i> Frontend Dev</span>
+                        <span class="skill-tag"><i class="fa-solid fa-layer-group"></i> Wireframing</span>
+                        <span class="skill-tag"><i class="fa-solid fa-lightbulb"></i> Problem Solving</span>
                     </div>
                 </div>
-                <div class="portfolios-item col-md-4">
-                    <img class="portfolios-image" src="assets/imgs/project2.jpg" alt="screenshot of design portfolio website"/>
-                    <h3 class="portfolios-name">Order-Summery</h3>
-                    <p class="portfolios-tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    </p>
-                    <div class="portfolio-card-overlay">
-                        <div class="portfolios-links">
-                            <a href="https://nadeerabinoli.github.io/order-summery/" class="underline" target="_blank" rel="noopener noreferrer">Live project</a>
-                            <a href="https://github.com/NadeeraBinoli/order-summery" class="underline" target="_blank" rel="noopener noreferrer">View Code</a>
+
+                <!-- Development Skills -->
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
                         </div>
+                        <h3>Development</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML</span>
+                        <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                        <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="fa-brands fa-laravel"></i> Laravel</span>
+                        <span class="skill-tag"><i class="fa-brands fa-vuejs"></i> Vue.js</span>
+                        <span class="skill-tag"><i class="fa-brands fa-java"></i> Java</span>
+                        <span class="skill-tag"><i class="fa-solid fa-c"></i> C</span>
+                        <span class="skill-tag"><i class="fa-solid fa-code"></i> C#</span>
+                        <span class="skill-tag"><i class="fa-solid fa-database"></i> MySQL</span>
+                        <span class="skill-tag"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+                        <span class="skill-tag"><i class="fa-brands fa-php"></i> PHP</span>
+                        <span class="skill-tag"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                        <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
                     </div>
                 </div>
-                <div class="portfolios-item col-md-4">
-                    <img class="portfolios-image" src="assets/imgs/project3.png" alt="screenshot of design portfolio website"/>
-                    <h3 class="portfolios-name">personal blog design</h3>
-                    <p class="portfolios-tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JS</span>
-                    </p>
-                    <div class="portfolio-card-overlay">
-                        <div class="portfolios-links">
-                            <a href="https://nadeerabinoli.github.io/personal-blog/" class="underline" target="_blank" rel="noopener noreferrer">Live project</a>
-                            <a href="https://github.com/NadeeraBinoli/personal-blog" class="underline" target="_blank" rel="noopener noreferrer">View Code</a>
+
+                <!-- Tools & Platforms -->
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
                         </div>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fa-solid fa-code"></i> VS Code</span>
+                        <span class="skill-tag"><i class="fa-brands fa-github"></i> GitHub</span>
+                        <span class="skill-tag"><i class="fa-solid fa-terminal"></i> Visual Studio</span>
+                        <span class="skill-tag"><i class="fa-brands fa-figma"></i> Figma</span>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="portfolios-item col-md-4">
-                    <img class="portfolios-image" src="assets/imgs/project4.jpg" alt="screenshot of design portfolio website"/>
-                    <h3 class="portfolios-name">product preview card</h3>
-                    <p class="portfolios-tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    </p>
-                    <div class="portfolio-card-overlay">
-                        <div class="portfolios-links">
-                            <a href="https://nadeerabinoli.github.io/product-preview-card/" class="underline" target="_blank" rel="noopener noreferrer">Live project</a>
-                            <a href="https://github.com/NadeeraBinoli/product-preview-card" class="underline" target="_blank" rel="noopener noreferrer">View Code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolios-item col-md-4">
-                    <img class="portfolios-image" src="assets/imgs/project5.jpg" alt="screenshot of design portfolio website"/>
-                    <h3 class="portfolios-name">Portfolio design</h3>
-                    <p class="portfolios-tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JS</span>
-                    </p>
-                    <div class="portfolio-card-overlay">
-                        <div class="portfolios-links">
-                            <a href="https://nadeerabinoli.github.io/Aden-Waller/" class="underline" target="_blank" rel="noopener noreferrer">Live project</a>
-                            <a href="https://github.com/NadeeraBinoli/Aden-Waller" class="underline" target="_blank" rel="noopener noreferrer">View Code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolios-item col-md-4">
-                    <img class="portfolios-image" src="assets/imgs/project6.jpeg" alt="screenshot of design portfolio website"/>
-                    <h3 class="portfolios-name">e-commerce website</h3>
-                    <p class="portfolios-tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JS</span>
-                    </p>
-                    <div class="portfolio-card-overlay">
-                        <div class="portfolios-links">
-                            <a href="https://nadeerabinoli.github.io/ShopWithUs/" class="underline" target="_blank" rel="noopener noreferrer">Live project</a>
-                            <a href="https://github.com/NadeeraBinoli/ShopWithUs" class="underline"target="_blank" rel="noopener noreferrer">View Code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolios-item col-md-4">
-                    <img class="portfolios-image" src="assets/imgs/project7.png" alt="screenshot of design portfolio website"/>
-                    <h3 class="portfolios-name">Fresh Chef – Food and Beverages Delivering and Catering System</h3>
-                    <p class="portfolios-tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JS</span>
-                    <span>PHP</span>
-                    <span>MySQL</span>
-                    <span>Git</span>
-                    </p>
-                    <div class="portfolio-card-overlay">
-                        <div class="portfolios-links">
-                            <a href="https://github.com/NadeeraBinoli/Fresh-Chef" class="underline"target="_blank" rel="noopener noreferrer">View Code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolios-item col-md-4">
-                    <img class="portfolios-image" src="assets/imgs/project8.png" alt="screenshot of design portfolio website"/>
-                    <h3 class="portfolios-name">Nutri-Assist – Meal Planning & Health Tracking System</h3>
-                    <p class="portfolios-tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JS</span>
-                    <span>Python</span>
-                    <span>MySQL</span>
-                    <span>Git</span>
-                    <span>Figma</span>
-                    </p>
-                    <div class="portfolio-card-overlay">
-                        <div class="portfolios-links">
-                            <a href="https://github.com/NadeeraBinoli/Nutri-Assist" class="underline" target="_blank" rel="noopener noreferrer">View Code</a>
-                            <a href="https://www.figma.com/design/yOyA2r1qj92893SyEaXhN5/Nutri-Assist-Prototype?node-id=2-5272&t=76z9tjbtivZQrzem-1" class="underline" target="_blank" rel="noopener noreferrer">View Design</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-    <!-- blog section -->
-    <section class="section" id="blog">
-        <!-- container -->
-        <div class="container text-center">
-            <p class="section-subtitle"><a href="https://dev.to/nadeerabinoli" target="_blank" rel="noopener noreferrer">Recent Posts?</a></p>
-            <h6 class="section-title mb-6">Blog</h6>
-            <!-- blog-wrapper -->
-            <div class="blog-card">
-                <div class="blog-card-header">
-                    <img src="assets/imgs/blog1.jpg" class="blog-card-img"
-                        alt="">
-                </div>
-                <div class="blog-card-body">
-                    <h5 class="blog-card-title">Keywords vs Reserve Words</h6>
+    <!-- Qualifications / Experience Section -->
+    <section class="section" id="qualify">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-subtitle">How suitable I am?</span>
+                <h2 class="section-title">Qualifications & Experience</h2>
+            </div>
 
-                        <p class="blog-card-caption">
-                            <a href="#">By: Nadeera Binoli</a>
-                            <a href="#"><i class="fa-regular fa-heart text-danger"></i> 2</a>
-                            <a href="#"><i class="fa-regular fa-message"></i> 1</a>
-                        </p>
-                        <p>As a beginner developer, I sometimes feel a little misunderstanding when it comes to the basic terminologies of development. Among them, Keyword and Reserve words take the main place. These two words always sound like the same thing, but they are different in many ways.</p>
-
-                        <p><b>Every keyword is a reserve word, but all reserve words are not keywords!!</b>
-                        </p>
-                        <p>Let's dig in to understand what is this paradox!</p>
-
-                        <a href="https://dev.to/nadeerabinoli/keywords-vs-reserved-words-in-java-whats-the-difference-1lc2" class="blog-card-link" target="_blank" rel="noopener noreferrer">Read more <i class="fa-solid fa-angles-right"></i></a>
-                </div>
-            </div><!-- end of blog wrapper -->
-        </div><!-- end of container -->
-    </section><!-- end of blog section -->
-
-    <!-- contact section -->
-    <section class="section" id="contact">
-        <div class="container text-center">
-            <p class="section-subtitle">How can you communicate?</p>
-            <h6 class="section-title mb-5">Contact Me</h6>
-            <div class="contactInfo">
-                <div class="contact">
-                    <h5 class="fs-h4 mb-15 mt-25 fc-primary">Say hello</h5>
-                    <div class="cInfo">
-                            <a href= "mailto:nadeerabinoli@gmail.com" class="mb-5 display-inblock">
-                            <i class="fa-regular fa-envelope"></i>
-                            nadeerabinoli@gmail.com
-                            </a> <br>
-                            <a href="tel:+94703635865" class="mb-5 display-inblock">
-                            <i class="fa-solid fa-phone"></i>
-                            +94 70 363 58 65 – Hotline 
+            <div class="timeline-grid">
+                <!-- Education Column -->
+                <div class="timeline-column">
+                    <div class="timeline-column-header">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <h3>Education</h3>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <h4>Bachelor of Information Technology Honours</h4>
+                                <span class="timeline-period">2022 - Present (Expected 2026)</span>
+                                <div class="timeline-institution">ESOFT Metro Campus, Colombo, Sri Lanka</div>
+                                <p class="timeline-desc">
+                                    Four-year Honours degree program. Currently in the final year maintaining a
+                                    <strong>3.56 GPA</strong>. Specializing in Software Engineering.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="contact">
-                    <h5 class="fs-h4 mb-15 mt-25 fc-primary">Follow Me</h5> 
-                    <div class="cInfo">
-                            <a href="https://web.facebook.com/nadeera.binoli" class="display-inblock mr-10">
-                            <i class="fa-brands fa-facebook"></i>
-                            Facebook
-                            </a> 
-                            <a href="https://www.instagram.com/nadeera_binoli?igsh=dHJ2YWdpdHNqZmxl" class="display-inblock mr-10">
-                            <i class="fa-brands fa-instagram"></i>
-                            Instagram
-                            </a> <br>
-                            <a href="https://www.linkedin.com/in/nadeera-binoli-44747a253/" class="display-inblock mr-10">
-                            <i class="fa-brands fa-linkedin"></i>
-                            linkedin
-                            </a> 
-                            <a href="https://github.com/NadeeraBinoli" class="display-inblock mr-10">
-                            <i class="fa-brands fa-github"></i>
-                            Github
-                            </a>
+
+                <!-- Experience Column -->
+                <div class="timeline-column">
+                    <div class="timeline-column-header">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <h3>Professional Experience</h3>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <h4>Full-Stack Developer Intern</h4>
+                                <span class="timeline-period">2025 September - Present</span>
+                                <div class="timeline-institution">TechSeed Lanka Pvt (Ltd)</div>
+                                <p class="timeline-desc">
+                                    Contributing to enterprise-level web applications using Laravel, Vue.js, and MySQL.
+                                    Responsibilities include building backend business logic, RESTful APIs, database
+                                    operations, responsive UI interfaces, and performance optimizations.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div><!-- end of container -->
-    </section><!-- end of contact section -->
+        </div>
+    </section>
 
-    <!-- footer -->
-<footer>
-    <p> Design With Love By NadB <i class="fa-solid fa-heart"></i></p>
-</footer>
-    <!-- end of page footer -->
+    <!-- Portfolio Projects Section -->
+    <section class="section" id="portfolio">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-subtitle">What I Did ?</span>
+                <h2 class="section-title">Featured Portfolio</h2>
+            </div>
 
-    <!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+            <!-- Project Filters -->
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="uiux">UI/UX & Components</button>
+            </div>
 
-    <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+            <div class="projects-grid">
+                <!-- Project 1: Nutri-Assist -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-thumbnail">
+                        <img src="assets/imgs/project8.png" alt="Nutri-Assist Project Preview">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Nutri-Assist – Meal Planning & Health Tracking System</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JS</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">Git</span>
+                            <span class="project-tag">Figma</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/NadeeraBinoli/Nutri-Assist" class="project-link-btn"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i> View Code
+                            </a>
+                            <a href="https://www.figma.com/design/yOyA2r1qj92893SyEaXhN5/Nutri-Assist-Prototype?node-id=2-5272&t=76z9tjbtivZQrzem-1"
+                                class="project-link-btn" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-figma"></i> View Design
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- Meyawo js -->
-    <script src="assets/js/meyawo.js"></script>
+                <!-- Project 2: Fresh Chef -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-thumbnail">
+                        <img src="assets/imgs/project7.png" alt="Fresh Chef Project Preview">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Fresh Chef – Food & Beverage Delivery System</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">HTML5</span>
+                            <span class="project-tag">CSS3</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Bootstrap</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/NadeeraBinoli/Fresh-Chef" class="project-link-btn"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: StorySpace -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-thumbnail">
+                        <img src="assets/imgs/story.png" alt="StorySpace Project Preview">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">StorySpace – Advanced Blog System</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Django 5</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">HTML5</span>
+                            <span class="project-tag">CSS3</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Bootstrap</span>
+                            <span class="project-tag">SQLite</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/NadeeraBinoli/StorySpace" class="project-link-btn"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: FitLife -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-thumbnail">
+                        <img src="assets/imgs/fitlife.png" alt="FitLife Gym Management System Preview">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">FitLife – Gym Management System</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Java</span>
+                            <span class="project-tag">Java Swing</span>
+                            <span class="project-tag">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/NadeeraBinoli/FitLifeGymApplication" class="project-link-btn"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: VersionDesk -->
+                <div class="project-card" data-category="uiux">
+                    <div class="project-thumbnail">
+                        <img src="assets/imgs/version.png" alt="VersionDesk Project Preview">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">VersionDesk – Interactive Project Management & Communication Hub</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">TypeScript</span>
+                            <span class="project-tag">Vite</span>
+                            <span class="project-tag">Tailwind CSS</span>
+                            <span class="project-tag">Figma</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://nadeerabinoli.github.io/versiondesk-ui/" class="project-link-btn"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/NadeeraBinoli/versiondesk-ui" class="project-link-btn"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: ShopWithUs E-Commerce -->
+                <div class="project-card" data-category="frontend">
+                    <div class="project-thumbnail">
+                        <img src="assets/imgs/project6.jpeg" alt="ShopWithUs Project Preview">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">e-Commerce Website (ShopWithUs)</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://nadeerabinoli.github.io/ShopWithUs/" class="project-link-btn"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/NadeeraBinoli/ShopWithUs" class="project-link-btn"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Advice Generator -->
+                <div class="project-card" data-category="frontend">
+                    <div class="project-thumbnail">
+                        <img src="assets/imgs/project1.jpg" alt="Advice Generator Preview">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Advice Generator App</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://nadeerabinoli.github.io/Advice-generator/" class="project-link-btn"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/NadeeraBinoli/Advice-generator" class="project-link-btn"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Order Summary -->
+                <div class="project-card" data-category="uiux">
+                    <div class="project-thumbnail">
+                        <img src="assets/imgs/project2.jpg" alt="Order Summary Preview">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Order Summary Component</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://nadeerabinoli.github.io/order-summery/" class="project-link-btn"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/NadeeraBinoli/order-summery" class="project-link-btn"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Personal Blog Design -->
+                <div class="project-card" data-category="uiux">
+                    <div class="project-thumbnail">
+                        <img src="assets/imgs/project3.png" alt="Personal Blog Preview">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Personal Blog Design</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://nadeerabinoli.github.io/personal-blog/" class="project-link-btn"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/NadeeraBinoli/personal-blog" class="project-link-btn"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: Product Preview Card -->
+                <div class="project-card" data-category="uiux">
+                    <div class="project-thumbnail">
+                        <img src="assets/imgs/project4.jpg" alt="Product Preview Card">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Product Preview Card Component</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://nadeerabinoli.github.io/product-preview-card/" class="project-link-btn"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/NadeeraBinoli/product-preview-card" class="project-link-btn"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8: Portfolio Design -->
+                <div class="project-card" data-category="uiux">
+                    <div class="project-thumbnail">
+                        <img src="assets/imgs/project5.jpg" alt="Portfolio Design Preview">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Portfolio Design (Aden Waller Theme)</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://nadeerabinoli.github.io/Aden-Waller/" class="project-link-btn"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/NadeeraBinoli/Aden-Waller" class="project-link-btn"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="section" id="blog">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-subtitle">
+                    <a href="https://dev.to/nadeerabinoli" target="_blank" rel="noopener noreferrer">Recent Posts <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </span>
+                <h2 class="section-title">Blog & Articles</h2>
+            </div>
+
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-img-holder">
+                        <img src="assets/imgs/blog1.jpg" alt="Blog Post Cover Image">
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">Keywords vs Reserved Words in Java</h3>
+                        <div class="blog-meta">
+                            <span><i class="fa-solid fa-user"></i> Nadeera Binoli</span>
+                            <span><i class="fa-regular fa-heart text-accent"></i> 2 Likes</span>
+                            <span><i class="fa-regular fa-comment"></i> Dev.to</span>
+                        </div>
+                        <p class="blog-excerpt">
+                            As a beginner developer, basic terminologies can sometimes be confusing. Among them,
+                            Keywords and Reserved words take center stage. Every keyword is a reserved word, but not all
+                            reserved words are keywords! Let's dig in to understand this paradox...
+                        </p>
+                        <a href="https://dev.to/nadeerabinoli/keywords-vs-reserved-words-in-java-whats-the-difference-1lc2"
+                            class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                            Read Full Article <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-subtitle">How can you communicate?</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+
+            <div class="contact-cards-grid">
+                <!-- Email Card -->
+                <div class="contact-card text-center">
+                    <div class="contact-icon mx-auto">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <h4>Email Me</h4>
+                    <p class="contact-link-wrapper">
+                        <a href="mailto:nadeerabinoli@gmail.com" class="copy-trigger"
+                            data-copy="nadeerabinoli@gmail.com">
+                            nadeerabinoli@gmail.com <i class="fa-regular fa-copy" title="Click to copy email"></i>
+                        </a>
+                    </p>
+                    <a href="mailto:nadeerabinoli@gmail.com" class="btn btn-outline btn-sm mt-3">
+                        <i class="fa-solid fa-paper-plane"></i> Send Email
+                    </a>
+                </div>
+
+                <!-- Phone Card -->
+                <div class="contact-card text-center">
+                    <div class="contact-icon mx-auto">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h4>Phone & Hotline</h4>
+                    <p class="contact-link-wrapper">
+                        <a href="tel:+94703635865" class="copy-trigger" data-copy="+94703635865">
+                            +94 70 363 58 65 <i class="fa-regular fa-copy" title="Click to copy phone"></i>
+                        </a>
+                    </p>
+                    <a href="tel:+94703635865" class="btn btn-outline btn-sm mt-3">
+                        <i class="fa-solid fa-phone"></i> Call Hotline
+                    </a>
+                </div>
+
+                <!-- Social Channels Card -->
+                <div class="contact-card text-center">
+                    <div class="contact-icon mx-auto">
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </div>
+                    <h4>Social Channels</h4>
+                    <p class="contact-link-wrapper">Let's connect & collaborate</p>
+                    <div class="hero-socials justify-center mt-3">
+                        <a href="https://github.com/NadeeraBinoli" target="_blank" rel="noopener noreferrer"
+                            class="social-icon-btn" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nadeera-binoli-44747a253/" target="_blank"
+                            rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/nadeera_binoli?igsh=dHJ2YWdpdHNqZmxl" target="_blank"
+                            rel="noopener noreferrer" class="social-icon-btn" title="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://web.facebook.com/nadeera.binoli" target="_blank" rel="noopener noreferrer"
+                            class="social-icon-btn" title="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="#home" class="back-to-top" title="Back to Top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+                <p class="footer-text">
+                    Designed with <i class="fa-solid fa-heart"></i> by NadB &copy; 2026. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript Logic -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 
